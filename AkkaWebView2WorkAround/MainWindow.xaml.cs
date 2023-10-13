@@ -53,7 +53,16 @@ namespace AkkaWebView2WorkAround
 
     public class WebView2Actor : ReceiveActor
     {
+        override protected void PreStart()
+        {
+            Become(Working); 
+        }
+
         public WebView2Actor() : base()
+        {
+        }
+
+        private void Working()
         {
             ReceiveAsync<Work>(async message =>
             {
@@ -83,5 +92,4 @@ namespace AkkaWebView2WorkAround
             });
         }
     }
-
 }

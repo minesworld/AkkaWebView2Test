@@ -1,5 +1,6 @@
 using Akka.Actor;
 using Akka.Configuration;
+using Akka.Event;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -47,13 +48,22 @@ namespace AkkaWebView2Test
 
     public class Work
     {
-        public WebView2 WebView { get; set; }
-        public MainWindow Window { get; set; }
+        public WebView2 WebView { get; init; }
+        public MainWindow Window { get; init; }
     }
 
     public class WebView2Actor : ReceiveActor
     {
+        override protected void PreStart()
+        {
+            Become(Working); // makes no difference - could be declared in WebView2Actor().
+        }
+
         public WebView2Actor() : base()
+        {            
+        }
+
+        private void Working()
         {
             ReceiveAsync<Work>(async message =>
             {
@@ -63,7 +73,7 @@ namespace AkkaWebView2Test
                 }
                 catch(Exception ex)
                 {
-                    Debug.WriteLine($"before: {ex}");
+                    System.Diagnostics.Debug.WriteLine($"before: {ex}");
                 }
 
                 await message.WebView.EnsureCoreWebView2Async();
@@ -76,11 +86,9 @@ namespace AkkaWebView2Test
                 }
                 catch (Exception ex)
                 {
-                    Debug.WriteLine($"after: {ex}");
+                    System.Diagnostics.Debug.WriteLine($"after: {ex}");
                 }
             });
         }
     }
-
-
 }

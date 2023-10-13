@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WebView2Test (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WebView2Test (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

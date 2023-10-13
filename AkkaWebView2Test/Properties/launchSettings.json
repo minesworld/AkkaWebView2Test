@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AkkaWebView2Test (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "AkkaWebView2Test (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

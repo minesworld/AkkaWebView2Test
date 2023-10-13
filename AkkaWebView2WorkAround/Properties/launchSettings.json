@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AkkaWebView2WorkAround (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "AkkaWebView2WorkAround (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

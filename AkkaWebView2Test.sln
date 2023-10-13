@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaWebView2Test", "AkkaWeb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebView2Test", "WebView2Test\WebView2Test.csproj", "{CD523CF0-8448-4655-B3F4-D1AC74CC9676}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AkkaWebView2WorkAround", "AkkaWebView2WorkAround\AkkaWebView2WorkAround.csproj", "{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM64 = Debug|ARM64
@@ -53,6 +55,24 @@ Global
 		{CD523CF0-8448-4655-B3F4-D1AC74CC9676}.Release|x86.ActiveCfg = Release|x86
 		{CD523CF0-8448-4655-B3F4-D1AC74CC9676}.Release|x86.Build.0 = Release|x86
 		{CD523CF0-8448-4655-B3F4-D1AC74CC9676}.Release|x86.Deploy.0 = Release|x86
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Debug|ARM64.Build.0 = Debug|ARM64
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Debug|x64.ActiveCfg = Debug|x64
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Debug|x64.Build.0 = Debug|x64
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Debug|x64.Deploy.0 = Debug|x64
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Debug|x86.ActiveCfg = Debug|x86
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Debug|x86.Build.0 = Debug|x86
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Debug|x86.Deploy.0 = Debug|x86
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Release|ARM64.ActiveCfg = Release|ARM64
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Release|ARM64.Build.0 = Release|ARM64
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Release|ARM64.Deploy.0 = Release|ARM64
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Release|x64.ActiveCfg = Release|x64
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Release|x64.Build.0 = Release|x64
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Release|x64.Deploy.0 = Release|x64
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Release|x86.ActiveCfg = Release|x86
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Release|x86.Build.0 = Release|x86
+		{F2E611E8-9DE3-4BA8-8CF1-2B6C7804FEBC}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
